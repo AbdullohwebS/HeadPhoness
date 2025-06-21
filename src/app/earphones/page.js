@@ -1,5 +1,7 @@
 import CategoryHeader from "@/components/Header";
 import Card from "@/components/Card";
+import AboutSection from "@/components/AboutSection";
+import CategoryLinks from "@/components/CategoryLinks";
 
 const earphones = [
     {
@@ -25,6 +27,9 @@ export default function EarphonesPage() {
                     <Card key={product.slug} {...product} />
                 ))}
             </div>
+
+            <CategoryLinks />
+            <AboutSection />
         </>
     );
 }
