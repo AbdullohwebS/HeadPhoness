@@ -5,16 +5,17 @@ export default function Card({
     slug = "xx99-mark-one-headphones",
     name = "XX99 Mark I Headphones",
     image = {
-        "mobile": "/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
-        "tablet": "/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
-        "desktop": "/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
+        mobile: "/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+        tablet: "/assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
+        desktop: "/assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
     },
     category = "headphones",
     isNew = false,
     description = "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
+    reverse = false // ✅ yangi qo‘shilgan
 }) {
     return (
-        <div className="flex flex-col lg:flex-row items-center gap-10 my-16 px-4 max-w-6xl mx-auto">
+        <div className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} items-center gap-10 my-16 px-4 max-w-6xl mx-auto`}>
             <div className="w-full lg:w-1/2">
                 <Image
                     src={image.desktop}
