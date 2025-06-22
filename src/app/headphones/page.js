@@ -50,11 +50,10 @@ export default function HeadphonesPage() {
         <>
             <CategoryHeader title="Headphones" />
             <div className="space-y-10 px-4 max-w-6xl mx-auto">
-                {headphones.map((product) => (
-                    <Card key={product.slug} {...product} />
+                {headphones.map((product, index) => (
+                    <Card key={product.slug} {...product} reverse={index === 1} />
                 ))}
             </div>
-
             <CategoryLinks />
             <AboutSection />
         </>

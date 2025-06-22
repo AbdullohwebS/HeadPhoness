@@ -12,7 +12,7 @@ export default function Card({
     category = "headphones",
     isNew = false,
     description = "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
-    reverse = false // ✅ yangi qo‘shilgan
+    reverse = false
 }) {
     return (
         <div className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} items-center gap-10 my-16 px-4 max-w-6xl mx-auto`}>
